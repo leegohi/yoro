@@ -20,7 +20,7 @@ Just want to make a easy way to generate yolov3 train set and cfg automatically
 
 # output
 
-```python
+```bash
 .
 ├── 2019.names
 ├── LICENSE
@@ -44,11 +44,11 @@ after these commands,you will see like below,the script generate a folder names 
 
 - **2019.names** ：copy from ./2019.names contains the classes，it is just a txt file，each line put one label.
 
-- **backup** ：when training the darknet put it weight file to it
+- **backup** ：when we are training,the darknet puts it weight file to it
 
 - **exclude** ： useless image，ignore
 
-- **train.data** : the file tell darknet where the train image,test image,classes count,classes file,backup folder are
+- **train.data** : the file tells darknet where the train image,test image,classes count,classes file and backup folder are
 
 - **voc** : collect the .xml voc file
 
@@ -58,7 +58,7 @@ after these commands,you will see like below,the script generate a folder names 
 
 # command
 
-```python
+```bash
 usage: yoro.py [-h] -n NAME -i IMG -v VOC -c CLS [-p PRT]
 
 optional arguments:
